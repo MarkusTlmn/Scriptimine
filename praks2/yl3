@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# Minu Nimi, Perenimi, Oppegrupp, Muljed
+#
+# skripti algus
+#
+# echo valjastab teksti naiteks "tekst"
+#
+echo "Markus Tellmann"
+echo "ITS21"
+echo "Mulle hetkel meeldib  see aine"
+echo "Aine tundub ponev ja huvitav ning loodan saada skriptimises paremaks"
+#
+# skripti lopp

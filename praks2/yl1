@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# Kasutaja tervitus
+#
+# skripti algus
+#
+# echo valjastab teksi nt "tekst"
+# $USER valjastab antud skripti kasutanud kasutajanime 
+echo "Tere $USER"
+echo "!"
+#
+# skripti lopp
