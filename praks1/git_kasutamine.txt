@@ -16,3 +16,11 @@ cd skriptimine
 
 d) tekita lokaalne reositoorium git susteemi jaoks antud kaustas
 git int
+
+remote seadistamine:
+e) git remote add nimi github:address
+git remove add skriptimine git@github.com:kasutajanimi/reponimi.git
+
+f) git remote kontroll
+git remote -v
+
