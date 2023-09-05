@@ -18,9 +18,13 @@ d) tekita lokaalne reositoorium git susteemi jaoks antud kaustas
 git int
 
 remote seadistamine:
-e) git remote add nimi github:address
+a) git remote add nimi github:address
 git remove add skriptimine git@github.com:kasutajanimi/reponimi.git
 
-f) git remote kontroll
+b) git remote kontroll
 git remote -v
 
+Pohikasutamine: 
+
+a) pane fail jalgimisele:
+git add failinimi
