@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# .log failide otsija var kataloogis
+#
+# skripti algus
+#
+# find käsk leiab failid ning väljastab need
+# -name "*.log" on võimalik täpsustada milliseid faile soovid otsida
+# -ecex wc -l {} + ecex käsuga saab käivitada wc käsu mis loeb üle kõikide failide read (-l loeb üle kõikide selekteertitud failide read ehk siis hektel kõik .log lõpuga failid) 
+# sort -n sorteerib failid alustades vähimate ridadega failist 
+find /var/log/ -name "*.log" -exec wc -l {} + | sort -n
+#
+# skripti lõpp
