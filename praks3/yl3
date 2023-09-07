@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# masina hetkene töötamisaeg
+#
+# skripti algus
+#
+# hostname väljastab arvuti nime
+# uptime väljastab arvuti tööloleku ning -p muudab selle ilusamaks
+echo "$(hostname) $(uptime -p)"
+#
+# skripti lõpp
