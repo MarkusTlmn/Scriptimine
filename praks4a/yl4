@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+# skripti algus
+
+# küsime kataloogi asukohta
+read -p "Sisestage kataloog millest soovite backupi teha: " fail
+
+# kontrollime kas kataloog on olemas
+if [ ! -d "$fail" ]; then
+  echo "Kataloogi $fail ei leitud. Palun veendu, et see kataloog eksisteerib."
+  exit 1
+fi
+
+# määrame backup failile nime
+backup="praks2.backup.tar.gz"
+
+# pakime kataloogi kokku ning teeme backupi
+tar -czvf "./backup/$backup" "$fail"
+
+# kontrollime kas backup toimis
+if [ $? -eq 0 ]; then
+ echo "Kataloogi $fail backup-i nimi on $backup ja ta asub /home/markus/skriptimine/praks4a/backup/ kataloogis"
+else
+  echo "Varundamine ebaõnnestus."
+fi
+
+# skripti lõpp
