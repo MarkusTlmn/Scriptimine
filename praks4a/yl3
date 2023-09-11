@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# skripti algus
+
+# kontrollime kas kataloog on olemas
+if [ ! -d "test" ]; then
+  echo "Kataloogi 'test' ei leitud. Palun veendu, et see kataloog eksisteerib."
+  exit 1
+fi
+
+# määrame failile nime
+backup="test.backup.tar.gz"
+
+# pakime kataloogi test kokku ning teeme backupi
+tar -czvf "./backup/$backup" "test"
+
+# kontrollime kas backup toimis
+if [ $? -eq 0 ]; then
+ echo "Kataloogi /home/markus/skriptimine/praks4a/test/ backup_i nimi on $backup ja ta asub /home/markus/skriptimine/praks4a/backup/ kataloogis"
+else
+  echo "Varundamine ebaõnnestus."
+fi
+
+# skripti lõpp
