@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# skripti algus
+
+# sisendi küsimine
+read -p "Sisesta külje a väärtus: " a
+read -p "Sisesta külje b väärtus: " b
+
+# arvutused
+c=$((a*a + b*b))
+a2=$((a*a))
+b2=$((b*b))
+vastus=$(echo "scale=2; sqrt($c)" | bc)
+
+echo "c = $vastus"
+echo "vastus on 5 kuna külg a*a = $a2 + külg b*b = $b2 = ruutjuur $c = $vastus"
+
+# scripti lõpp
