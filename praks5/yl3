@@ -1,0 +1,14 @@
+#!/bin/bash
+# Naasemispäeva kalkulaator
+# skripti algus
+
+# sisendi küsimine
+read -p "Sisesta millal sõidad ära: " lahkumine
+read -p "Sisesta mitu päeva oled ära: " olemine
+
+# Arvutus (% arvutab jäägi ehk kui nt 18%7 siis on tulemus 4 kuna kui jagada 18 7ga siis 18/7 = 2*7 + 4 jääb üle)
+naasemine=$(((lahkumine + olemine) % 7))
+
+echo "Olete tagasi päeval number $naasemine"
+
+# Skripti lõpp
