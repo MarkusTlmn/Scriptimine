@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# skripti algus
+
+# sisendi küsimine
+read -p "Sisesta külje a väärtus: " a
+read -p "Sisesta külje b väärtus: " b
+read -p "Sisesta külje c väärtus: " c
+# arvutused
+p=$(((a+b+c)/2))
+pp=$((p*(p-a)*(p-b)*(p-c)))
+vastus=$(echo "scale=2; sqrt($pp) " | bc)
+
+echo "S = $vastus"
+echo "Kasutades Heeroini valemit S=ruutjuur p(p-a)(p-a)(p-a)kus p=(a+b+c)/2 saab vasutseks S = ruutjuur $p($p-$a)($p-$b)($p-$c)= $vastus"
+# scripti lõpp
