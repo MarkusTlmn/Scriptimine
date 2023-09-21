@@ -1,0 +1,25 @@
+#!/bin/bash
+# vanuse kontroll
+# skripti algus
+
+# küsib kasutajalt vanust
+read -p "Palun sisesta oma vanus: " vanus
+
+# kontrollib kas sisestatud väärtus on vastav
+if ! [[ "$vanus" =~ ^[0-9]+$ ]]; then
+    echo "Viga! Sisestatud väärtus ei ole sobilik"
+    exit 1
+fi
+
+# väljastab vanuseastme vastavalt vanusele
+if (( vanus >= 0 && vanus <= 11 )); then
+    echo "Oled laps"
+elif (( vanus >= 12 && vanus <= 18 )); then
+    echo "Oled nooruk"
+elif (( vanus >= 19 && vanus <= 63 )); then
+    echo "Oled täiskasvanu"
+else
+    echo "Oled seenior"
+fi
+
+# skripti lõpp
