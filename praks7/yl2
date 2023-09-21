@@ -18,3 +18,4 @@ else
     echo "Sisestatud arv pole sobilik"
 fi
 
+# skritpi lõpp
