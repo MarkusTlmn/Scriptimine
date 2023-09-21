@@ -2,7 +2,7 @@
 # vanuse kontroll
 # skripti algus
 
-# küsib kasutajalt vanust
+# küsib kasutajalt vanust 
 read -p "Palun sisesta oma vanus: " vanus
 
 # kontrollib kas sisestatud väärtus on vastav
